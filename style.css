@@ -1,64 +1,56 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
   padding: 20px;
-  background: #f4f4f4;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-#gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-  gap: 20px;
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
+  position: relative; /* important for floating performer list */
   width: 245px;
-}
-
-.card:hover {
-  transform: scale(1.05);
+  height: 130px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  overflow: visible;
 }
 
 .card img {
-  width: 245px;
-  height: 130px;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
-.card h3 {
-  margin: 10px 0;
-  font-size: 1rem;
-}
-
-/* Hidden by default */
-.card .performers {
+.performer-list {
   display: none;
-  padding-bottom: 10px;
+  position: absolute;
+  top: 140px; /* below the thumbnail */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-.card .performers button {
-  margin: 5px;
-  padding: 5px 10px;
-  border: none;
-  background: #2196F3;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.85rem;
+.performer-list a {
+  display: block;
+  margin: 2px 0;
+  text-decoration: none;
+  color: #333;
 }
 
-.card .performers button:hover {
-  background: #0b7dda;
+.performer-list a:hover {
+  text-decoration: underline;
 }
