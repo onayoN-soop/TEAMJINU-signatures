@@ -81,7 +81,8 @@ const songs = {
   },
   "1117": { 
     title: "1117", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "앙츄": "https://vod-origin.sooplive.co.kr/player/187114471/catch" }, 
     thumbnail: "thumbnails/1117.png" 
   },
   "1122": { 
@@ -141,7 +142,9 @@ const songs = {
   },
   "1214": { 
     title: "1214", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "박아진": "https://vod.sooplive.co.kr/player/187114271/catch"
+    }, 
     thumbnail: "thumbnails/1214.png" 
   },
   "1222": { 
