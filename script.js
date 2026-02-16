@@ -899,9 +899,278 @@ const songs = {
   title: "Title for 8888", 
   performers: { "Performer1": "#" }, 
   thumbnail: "thumbnails/8888.png" 
-}
-
-
+},
+  "10000": { 
+    title: "10000", 
+    performers: {}, 
+    thumbnail: "thumbnails/10000.png" 
+  },
+  "10001": { 
+    title: "10001", 
+    performers: {}, 
+    thumbnail: "thumbnails/10001.png" 
+  },
+  "10007": { 
+    title: "10007", 
+    performers: {}, 
+    thumbnail: "thumbnails/10007.png" 
+  },
+  "10024": { 
+    title: "10024", 
+    performers: {}, 
+    thumbnail: "thumbnails/10024.png" 
+  },
+  "10029": { 
+    title: "10029", 
+    performers: {}, 
+    thumbnail: "thumbnails/10029.png" 
+  },
+  "10031": { 
+    title: "10031", 
+    performers: {}, 
+    thumbnail: "thumbnails/10031.png" 
+  },
+  "10040": { 
+    title: "10040", 
+    performers: {}, 
+    thumbnail: "thumbnails/10040.png" 
+  },
+  "10054": { 
+    title: "10054", 
+    performers: {}, 
+    thumbnail: "thumbnails/10054.png" 
+  },
+  "10055": { 
+    title: "10055", 
+    performers: {}, 
+    thumbnail: "thumbnails/10055.png" 
+  },
+  "10072": { 
+    title: "10072", 
+    performers: {}, 
+    thumbnail: "thumbnails/10072.png" 
+  },
+  "10074": { 
+    title: "10074", 
+    performers: {}, 
+    thumbnail: "thumbnails/10074.png" 
+  },
+  "10075": { 
+    title: "10075", 
+    performers: {}, 
+    thumbnail: "thumbnails/10075.png" 
+  },
+  "10077": { 
+    title: "10077", 
+    performers: {}, 
+    thumbnail: "thumbnails/10077.png" 
+  },
+  "10079": { 
+    title: "10079", 
+    performers: {}, 
+    thumbnail: "thumbnails/10079.png" 
+  },
+  "10082": { 
+    title: "10082", 
+    performers: {}, 
+    thumbnail: "thumbnails/10082.png" 
+  },
+  "10084": { 
+    title: "10084", 
+    performers: {}, 
+    thumbnail: "thumbnails/10084.png" 
+  },
+  "10085": { 
+    title: "10085", 
+    performers: {}, 
+    thumbnail: "thumbnails/10085.png" 
+  },
+  "10098": { 
+    title: "10098", 
+    performers: {}, 
+    thumbnail: "thumbnails/10098.png" 
+  },
+  "10099": { 
+    title: "10099", 
+    performers: {}, 
+    thumbnail: "thumbnails/10099.png" 
+  },
+  "10101": { 
+    title: "10101", 
+    performers: {}, 
+    thumbnail: "thumbnails/10101.png" 
+  },
+  "10110": { 
+    title: "10110", 
+    performers: {}, 
+    thumbnail: "thumbnails/10110.png" 
+  },
+  "10222": { 
+    title: "10222", 
+    performers: {}, 
+    thumbnail: "thumbnails/10222.png" 
+  },
+  "10301": { 
+    title: "10301", 
+    performers: {}, 
+    thumbnail: "thumbnails/10301.png" 
+  },
+  "10333": { 
+    title: "10333", 
+    performers: {}, 
+    thumbnail: "thumbnails/10333.png" 
+  },
+  "10400": { 
+    title: "10400", 
+    performers: {}, 
+    thumbnail: "thumbnails/10400.png" 
+  },
+  "10462": { 
+    title: "10462", 
+    performers: {}, 
+    thumbnail: "thumbnails/10462.png" 
+  },
+  "10522": { 
+    title: "10522", 
+    performers: {}, 
+    thumbnail: "thumbnails/10522.png" 
+  },
+  "10588": { 
+    title: "10588", 
+    performers: {}, 
+    thumbnail: "thumbnails/10588.png" 
+  },
+  "10777": { 
+    title: "10777", 
+    performers: {}, 
+    thumbnail: "thumbnails/10777.png" 
+  },
+  "10811": { 
+    title: "10811", 
+    performers: {}, 
+    thumbnail: "thumbnails/10811.png" 
+  },
+  "10825": { 
+    title: "10825", 
+    performers: {}, 
+    thumbnail: "thumbnails/10825.png" 
+  },
+  "10944": { 
+    title: "10944", 
+    performers: {}, 
+    thumbnail: "thumbnails/10944.png" 
+  },
+  "10999": { 
+    title: "10999", 
+    performers: {}, 
+    thumbnail: "thumbnails/10999.png" 
+  },
+  "11004": { 
+    title: "11004", 
+    performers: {}, 
+    thumbnail: "thumbnails/11004.png" 
+  },
+  "11111": { 
+    title: "11111", 
+    performers: {}, 
+    thumbnail: "thumbnails/11111.png" 
+  },
+  "11554": { 
+    title: "11554", 
+    performers: {}, 
+    thumbnail: "thumbnails/11554.png" 
+  },
+  "11700": { 
+    title: "11700", 
+    performers: {}, 
+    thumbnail: "thumbnails/11700.png" 
+  },
+  "12000": { 
+    title: "12000", 
+    performers: {}, 
+    thumbnail: "thumbnails/12000.png" 
+  },
+  "12121": { 
+    title: "12121", 
+    performers: {}, 
+    thumbnail: "thumbnails/12121.png" 
+  },
+  "12180": { 
+    title: "12180", 
+    performers: {}, 
+    thumbnail: "thumbnails/12180.png" 
+  },
+  "12345": { 
+    title: "12345", 
+    performers: {}, 
+    thumbnail: "thumbnails/12345.png" 
+  },
+  "13000": { 
+    title: "13000", 
+    performers: {}, 
+    thumbnail: "thumbnails/13000.png" 
+  },
+  "13333": { 
+    title: "13333", 
+    performers: {}, 
+    thumbnail: "thumbnails/13333.png" 
+  },
+  "14000": { 
+    title: "14000", 
+    performers: {}, 
+    thumbnail: "thumbnails/14000.png" 
+  },
+  "14441": { 
+    title: "14441", 
+    performers: {}, 
+    thumbnail: "thumbnails/14441.png" 
+  },
+  "15775": { 
+    title: "15775", 
+    performers: {}, 
+    thumbnail: "thumbnails/15775.png" 
+  },
+  "18888": { 
+    title: "18888", 
+    performers: {}, 
+    thumbnail: "thumbnails/18888.png" 
+  },
+  "20000": { 
+    title: "20000", 
+    performers: {}, 
+    thumbnail: "thumbnails/20000.png" 
+  },
+  "20486": { 
+    title: "20486", 
+    performers: {}, 
+    thumbnail: "thumbnails/20486.png" 
+  },
+  "23000": { 
+    title: "23000", 
+    performers: {}, 
+    thumbnail: "thumbnails/23000.png" 
+  },
+  "30000": { 
+    title: "30000", 
+    performers: {}, 
+    thumbnail: "thumbnails/30000.png" 
+  },
+  "50000": { 
+    title: "50000", 
+    performers: {}, 
+    thumbnail: "thumbnails/50000.png" 
+  },
+  "100000": { 
+    title: "100000", 
+    performers: {}, 
+    thumbnail: "thumbnails/100000.png" 
+  },
+  "300000": { 
+    title: "300000", 
+    performers: {}, 
+    thumbnail: "thumbnails/300000.png" 
+  }
+  
 };
 
 // Reference containers
