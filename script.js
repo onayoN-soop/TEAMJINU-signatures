@@ -1141,7 +1141,7 @@ const songs = {
     thumbnail: "thumbnails/18888.png" 
   }//end of 10000s
   },
-  "20000s": {
+  "20000+": {
   "20000": { 
     title: "20000", 
     performers: {}, 
