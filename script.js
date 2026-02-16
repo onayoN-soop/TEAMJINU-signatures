@@ -1,9 +1,8 @@
-function playVideo(videoId) {
-  document.getElementById('videoPlayer').src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+function openSong(songKey) {
+  document.getElementById('placeholderText').textContent = "Video for " + songKey + " coming soon!";
   document.getElementById('modal').style.display = "flex";
 }
 
 function closeModal() {
   document.getElementById('modal').style.display = "none";
-  document.getElementById('videoPlayer').src = "";
 }
