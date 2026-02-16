@@ -1,72 +1,45 @@
-// Song data with multiple performers
 const songs = {
   "song1": {
-    title: "Song 1",
+    title: "see봐 레쓰고",
     performers: {
-      "Alice": "dQw4w9WgXcQ",
-      "Bob": "3JZ_D3ELwOQ"
+      "두니": "https://vod.sooplive.co.kr/player/187080117/catch",
+      "금별": "https://vod.sooplive.co.kr/player/187082555/catch"
     },
-    thumbnail: "thumbnails/song1.png"
+    thumbnail: "thumbnails/1000.png"
   },
   "song2": {
-    title: "Song 2",
+    title: "아픈건 딱 질색이니까",
     performers: {
-      "Charlie": "kXYiU_JCYtU",
-      "Dave": "abc123"
+      "Charlie": "https://vod.sooplive.co.kr/player/187080119/catch",
+      "Dave": "https://vod.sooplive.co.kr/player/187080120/catch"
     },
-    thumbnail: "thumbnails/song2.png"
-  },
-  "song3": {
-    title: "Song 3",
-    performers: {
-      "Eva": "def456",
-      "Frank": "ghi789"
-    },
-    thumbnail: "thumbnails/song3.png"
+    thumbnail: "thumbnails/1001.png"
   }
+  // Add more songs here
 };
 
-// Generate cards dynamically
-const cardGrid = document.getElementById('cardGrid');
-for (let key in songs) {
-  const card = document.createElement('div');
-  card.className = 'card';
-  card.onclick = () => openSong(key);
+const gallery = document.getElementById("gallery");
 
-  const img = document.createElement('img');
-  img.src = songs[key].thumbnail;
-  img.alt = songs[key].title;
+for (let key in songs) {
+  const song = songs[key];
+
+  const card = document.createElement("div");
+  card.className = "card";
+
+  // Thumbnail image
+  const img = document.createElement("img");
+  img.src = song.thumbnail;
+  img.alt = song.title;
   card.appendChild(img);
 
-  const h3 = document.createElement('h3');
-  h3.textContent = songs[key].title;
-  card.appendChild(h3);
+  // Title below thumbnail
+  const title = document.createElement("h3");
+  title.textContent = song.title;
+  card.appendChild(title);
 
-  cardGrid.appendChild(card);
-}
+  // Performer buttons (hidden by default)
+  const performersDiv = document.createElement("div");
+  performersDiv.className = "performers";
 
-// Open modal with performer buttons
-function openSong(songKey) {
-  const song = songs[songKey];
-  const firstPerformer = Object.keys(song.performers)[0];
-  document.getElementById('videoPlayer').src = "https://www.youtube.com/embed/" + song.performers[firstPerformer] + "?autoplay=1";
-
-  const container = document.getElementById('performerButtons');
-  container.innerHTML = "";
   for (let performer in song.performers) {
-    const btn = document.createElement('button');
-    btn.textContent = performer;
-    btn.onclick = (e) => {
-      e.stopPropagation();
-      document.getElementById('videoPlayer').src = "https://www.youtube.com/embed/" + song.performers[performer] + "?autoplay=1";
-    };
-    container.appendChild(btn);
-  }
-
-  document.getElementById('modal').style.display = "flex";
-}
-
-function closeModal() {
-  document.getElementById('modal').style.display = "none";
-  document.getElementById('videoPlayer').src = "";
-}
+    const btn = document.cre
