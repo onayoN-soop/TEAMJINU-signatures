@@ -1180,47 +1180,64 @@ const songs = {
 } 
 };
 
-// Reference containers
+// Reference containers and modal elements
 const container = document.getElementById('cards-container');
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modal-img');
 const modalTitle = document.getElementById('modal-title');
 const modalPerformers = document.getElementById('modal-performers');
 const modalClose = document.getElementById('modal-close');
+const categoryButtons = document.querySelectorAll('.category-btn');
 
-// Generate cards dynamically
-for (const id in songs) {
-  const song = songs[id];
+// Function to generate cards for a given category
+function loadCategory(category) {
+  container.innerHTML = ''; // Clear existing cards
 
-  const card = document.createElement('div');
-  card.className = 'card';
-  card.id = 'song' + id;
+  if (!songs[category]) return; // if category has no songs
 
-  const img = document.createElement('img');
-  img.src = song.thumbnail;
-  img.alt = song.title;
-  card.appendChild(img);
+  const categorySongs = songs[category];
 
-  container.appendChild(card);
+  for (const id in categorySongs) {
+    const song = categorySongs[id];
 
-  // Click handler to open modal
-  card.addEventListener('click', () => {
-    modal.style.display = 'flex';
-    modalImg.src = song.thumbnail;
-    modalTitle.textContent = song.title;
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.id = 'song' + id;
 
-    // Clear previous performers
-    modalPerformers.innerHTML = '';
+    const img = document.createElement('img');
+    img.src = song.thumbnail;
+    img.alt = song.title;
+    card.appendChild(img);
 
-    for (const performer in song.performers) {
-      const a = document.createElement('a');
-      a.href = song.performers[performer];
-      a.target = '_blank';
-      a.textContent = performer;
-      modalPerformers.appendChild(a);
-    }
-  });
+    container.appendChild(card);
+
+    // Click handler to open modal
+    card.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = song.thumbnail;
+      modalTitle.textContent = song.title;
+
+      // Clear previous performers
+      modalPerformers.innerHTML = '';
+
+      for (const performer in song.performers) {
+        const a = document.createElement('a');
+        a.href = song.performers[performer];
+        a.target = '_blank';
+        a.textContent = performer;
+        modalPerformers.appendChild(a);
+      }
+    });
+  }
 }
+
+// Attach click handlers to category buttons
+categoryButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const category = btn.getAttribute('data-category');
+    loadCategory(category);
+  });
+});
 
 // Close modal on click of X or outside content
 modalClose.addEventListener('click', () => {
@@ -1231,3 +1248,5 @@ modal.addEventListener('click', (e) => {
   if (e.target === modal) modal.style.display = 'none';
 });
 
+// Load default category on page load
+loadCategory('1000s');
