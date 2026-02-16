@@ -1,7 +1,7 @@
 const songs = {
   "1000s": {
   "1000": { 
-    title: "SEE봐 레쓰고", 
+    title: "1000", 
     performers: { 
       "두니": "https://vod.sooplive.co.kr/player/187080117/catch",
       "금별": "https://vod.sooplive.co.kr/player/187082555/catch",
@@ -16,12 +16,16 @@ const songs = {
   },
   "1002": { 
     title: "1002", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "두시앙": "https://vod-origin.sooplive.co.kr/player/187114767/catch" 
+    }, 
     thumbnail: "thumbnails/1002.png" 
   },
   "1003": { 
     title: "1003", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "먼지": "https://vod-origin.sooplive.co.kr/player/187114919/catch" 
+    }, 
     thumbnail: "thumbnails/1003.png" 
   },
   "1004": { 
