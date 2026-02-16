@@ -1,3 +1,5 @@
+window.onload = function() {
+
 const songs = {
   "1000": { 
     title: "1000", 
@@ -506,3 +508,5 @@ for (const id in songs) {
   // Append the card to the container
   container.appendChild(card);
 }
+
+};
