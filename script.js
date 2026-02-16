@@ -453,11 +453,8 @@ const songs = {
   }
 };
 
-
-// Reference to the container in your HTML
+// References
 const container = document.getElementById('cards-container');
-
-// References to modal elements
 const modal = document.getElementById('modal');
 const modalThumbnail = document.getElementById('modal-thumbnail');
 const modalTitle = document.getElementById('modal-title');
@@ -468,54 +465,50 @@ const modalClose = document.getElementById('modal-close');
 for (const id in songs) {
   const song = songs[id];
 
-  // Create the card div
   const card = document.createElement('div');
   card.className = 'card';
   card.id = 'song' + id;
 
-  // Add the thumbnail image
   const img = document.createElement('img');
   img.src = song.thumbnail;
   img.alt = song.title;
   card.appendChild(img);
 
-  // Append the card to the container
   container.appendChild(card);
 
-  // Click handler for opening the modal
+  // Click to open modal
   card.addEventListener('click', () => {
-    // Fill modal content
     modalThumbnail.src = song.thumbnail;
     modalThumbnail.alt = song.title;
     modalTitle.textContent = song.title;
 
-    // Clear previous performer links
+    // Clear previous performers
     modalPerformers.innerHTML = '';
 
-    // Add performer links
+    // Add performers
     for (const performer in song.performers) {
       const a = document.createElement('a');
-      a.href = song.performers[performer]; // link goes here
+      a.href = song.performers[performer];
       a.target = '_blank';
       a.textContent = performer;
       modalPerformers.appendChild(a);
     }
 
-    // Show the modal
     modal.style.display = 'flex';
   });
 }
 
-// Close modal when clicking the close button
+// Close modal on X click
 modalClose.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
-// Close modal when clicking outside the modal content
+// Close modal when clicking outside modal content
 window.addEventListener('click', (event) => {
   if (event.target === modal) {
     modal.style.display = 'none';
   }
 });
+
 
 };
