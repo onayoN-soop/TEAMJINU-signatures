@@ -452,39 +452,57 @@ const songs = {
 };
 
 
-const gallery = document.getElementById("gallery");
+// Reference to the container in your HTML
+const container = document.getElementById('cards-container');
 
-for (let key in songs) {
-  const song = songs[key];
-  const card = document.createElement("div");
-  card.className = "card";
+// Generate cards dynamically
+for (const id in songs) {
+  const song = songs[id];
 
-  const img = document.createElement("img");
+  // Create the card div
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.id = 'song' + id;
+
+  // Add the thumbnail image
+  const img = document.createElement('img');
   img.src = song.thumbnail;
   img.alt = song.title;
   card.appendChild(img);
 
-  const title = document.createElement("h3");
-  title.textContent = song.title;
-  card.appendChild(title);
+  // Create the performer list
+  const performerList = document.createElement('div');
+  performerList.className = 'performer-list';
 
-  const performersDiv = document.createElement("div");
-  performersDiv.className = "performers";
-
-  for (let performer in song.performers) {
-    const btn = document.createElement("button");
-    btn.textContent = performer;
-    btn.onclick = (e) => {
-      e.stopPropagation();
-      window.open(song.performers[performer], "_blank");
-    };
-    performersDiv.appendChild(btn);
+  for (const performer in song.performers) {
+    const a = document.createElement('a');
+    a.href = song.performers[performer]; // link goes here
+    a.target = '_blank';
+    a.textContent = performer;
+    performerList.appendChild(a);
   }
 
-  card.appendChild(performersDiv);
-  card.onclick = () => {
-    performersDiv.style.display = performersDiv.style.display === "block" ? "none" : "block";
-  };
+  card.appendChild(performerList);
 
-  gallery.appendChild(card);
+  // Click handler for floating performer list
+  card.addEventListener('click', () => {
+    const allLists = document.querySelectorAll('.performer-list');
+
+    // Hide all other performer lists
+    allLists.forEach(list => {
+      if (list.parentElement !== card) {
+        list.style.display = 'none';
+      }
+    });
+
+    // Toggle this card's performer list
+    if (performerList.style.display === 'block') {
+      performerList.style.display = 'none';
+    } else {
+      performerList.style.display = 'block';
+    }
+  });
+
+  // Append the card to the container
+  container.appendChild(card);
 }
