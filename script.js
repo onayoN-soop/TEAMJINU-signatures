@@ -457,6 +457,13 @@ const songs = {
 // Reference to the container in your HTML
 const container = document.getElementById('cards-container');
 
+// References to modal elements
+const modal = document.getElementById('modal');
+const modalThumbnail = document.getElementById('modal-thumbnail');
+const modalTitle = document.getElementById('modal-title');
+const modalPerformers = document.getElementById('modal-performers');
+const modalClose = document.getElementById('modal-close');
+
 // Generate cards dynamically
 for (const id in songs) {
   const song = songs[id];
@@ -472,41 +479,43 @@ for (const id in songs) {
   img.alt = song.title;
   card.appendChild(img);
 
-  // Create the performer list
-  const performerList = document.createElement('div');
-  performerList.className = 'performer-list';
-
-  for (const performer in song.performers) {
-    const a = document.createElement('a');
-    a.href = song.performers[performer]; // link goes here
-    a.target = '_blank';
-    a.textContent = performer;
-    performerList.appendChild(a);
-  }
-
-  card.appendChild(performerList);
-
-  // Click handler for floating performer list
-  card.addEventListener('click', () => {
-    const allLists = document.querySelectorAll('.performer-list');
-
-    // Hide all other performer lists
-    allLists.forEach(list => {
-      if (list.parentElement !== card) {
-        list.style.display = 'none';
-      }
-    });
-
-    // Toggle this card's performer list
-    if (performerList.style.display === 'block') {
-      performerList.style.display = 'none';
-    } else {
-      performerList.style.display = 'block';
-    }
-  });
-
   // Append the card to the container
   container.appendChild(card);
+
+  // Click handler for opening the modal
+  card.addEventListener('click', () => {
+    // Fill modal content
+    modalThumbnail.src = song.thumbnail;
+    modalThumbnail.alt = song.title;
+    modalTitle.textContent = song.title;
+
+    // Clear previous performer links
+    modalPerformers.innerHTML = '';
+
+    // Add performer links
+    for (const performer in song.performers) {
+      const a = document.createElement('a');
+      a.href = song.performers[performer]; // link goes here
+      a.target = '_blank';
+      a.textContent = performer;
+      modalPerformers.appendChild(a);
+    }
+
+    // Show the modal
+    modal.style.display = 'flex';
+  });
 }
+
+// Close modal when clicking the close button
+modalClose.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
 
 };
