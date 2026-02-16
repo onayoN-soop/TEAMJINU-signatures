@@ -453,10 +453,10 @@ const songs = {
   }
 };
 
-// References
+// Reference containers
 const container = document.getElementById('cards-container');
 const modal = document.getElementById('modal');
-const modalThumbnail = document.getElementById('modal-thumbnail');
+const modalImg = document.getElementById('modal-img');
 const modalTitle = document.getElementById('modal-title');
 const modalPerformers = document.getElementById('modal-performers');
 const modalClose = document.getElementById('modal-close');
@@ -476,16 +476,15 @@ for (const id in songs) {
 
   container.appendChild(card);
 
-  // Click to open modal
+  // Click handler to open modal
   card.addEventListener('click', () => {
-    modalThumbnail.src = song.thumbnail;
-    modalThumbnail.alt = song.title;
+    modal.style.display = 'flex';
+    modalImg.src = song.thumbnail;
     modalTitle.textContent = song.title;
 
     // Clear previous performers
     modalPerformers.innerHTML = '';
 
-    // Add performers
     for (const performer in song.performers) {
       const a = document.createElement('a');
       a.href = song.performers[performer];
@@ -493,21 +492,16 @@ for (const id in songs) {
       a.textContent = performer;
       modalPerformers.appendChild(a);
     }
-
-    modal.style.display = 'flex';
   });
 }
 
-// Close modal on X click
+// Close modal on click of X or outside content
 modalClose.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
-// Close modal when clicking outside modal content
-window.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) modal.style.display = 'none';
 });
 
 
