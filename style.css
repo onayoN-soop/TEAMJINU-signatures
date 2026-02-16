@@ -145,36 +145,31 @@ h1 {
 /* Header image */
 #header-container #header-image {
   width: 100%;
-  height: auto;
+  height: 200px;
   display: block;
-  object-fit: cover;
 }
 
-/* Category buttons overlay */
 #header-container #category-buttons {
   position: absolute;
-  bottom: 20px; /* distance from bottom of image */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  text-align: center;
+  display: flex;
+  gap: 10px; /* space between buttons */
 }
 
-/* Buttons styling */
-#header-container #category-buttons button {
-  margin: 0 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 20px;
-  background-color: #ffdd57;
+.category-btn {
+  width: 100px; /* adjust as needed */
+  height: 40px; /* adjust as needed */
   cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.15s, box-shadow 0.15s;
+  object-fit: cover;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
-  font-weight: bold;
 }
 
-#header-container #category-buttons button:hover {
-  transform: translateY(-3px);
+.category-btn:hover {
+  transform: translateY(-3px) scale(1.05);
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-  background-color: #ffd93b;
 }
+
