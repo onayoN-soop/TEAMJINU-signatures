@@ -1,16 +1,12 @@
 const songs = {
-  "1000": {
-    title: "see봐 래쓰고",
-    performers: {
-      "두니": "https://vod.sooplive.co.kr/player/187080117/catch"
-    },
-    thumbnail: "thumbnails/1000.png"
+  "1000": { 
+    title: "1000", 
+    performers: { "Performer1": "#" }, 
+    thumbnail: "thumbnails/1000.png" 
   },
   "1001": { 
     title: "1001", 
-    performers: { 
-      "Performer1": "#" 
-    }, 
+    performers: { "Performer1": "#" }, 
     thumbnail: "thumbnails/1001.png" 
   },
   "1002": { 
