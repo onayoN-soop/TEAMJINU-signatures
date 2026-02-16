@@ -1232,9 +1232,16 @@ function loadCategory(category) {
 }
 
 // Attach click handlers to category buttons
+// Attach click handlers to category buttons
 categoryButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     const category = btn.getAttribute('data-category');
+
+    // --- ACTIVE BUTTON HIGHLIGHT ---
+    categoryButtons.forEach(b => b.classList.remove('active-category')); // remove from all
+    btn.classList.add('active-category'); // add to clicked button
+
+    // Load the cards for this category
     loadCategory(category);
   });
 });
@@ -1250,3 +1257,6 @@ modal.addEventListener('click', (e) => {
 
 // Load default category on page load
 loadCategory('1000s');
+// Set first category button as active by default
+categoryButtons.forEach(b => b.classList.remove('active-category'));
+categoryButtons[0].classList.add('active-category');
