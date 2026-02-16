@@ -31,7 +31,7 @@ body {
 /* CATEGORY BUTTONS OVER HEADER */
 #category-buttons {
   position: absolute;
-  bottom: 10px;        /* distance from bottom of header */
+  bottom: 5px;        /* distance from bottom of header */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -50,7 +50,7 @@ body {
 }
 
 .category-btn:hover {
-  transform: translateY(-3px) scale(1.30);
+  transform: translateY(-3px) scale(1.10);
 }
 
 /* CARDS CONTAINER BELOW HEADER */
