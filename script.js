@@ -1,4 +1,5 @@
 const songs = {
+  "1000s": {
   "1000": { 
     title: "SEE봐 레쓰고", 
     performers: { 
@@ -452,7 +453,9 @@ const songs = {
     title: "1999", 
     performers: { "Performer1": "#" }, 
     thumbnail: "thumbnails/1999.png" 
-  },
+  }
+}, //end of 1000s
+"2000s": {
 "2000": { 
   title: "Title for 2000", 
   performers: { 
@@ -643,7 +646,9 @@ const songs = {
     "Performer1": "#"
   }, 
   thumbnail: "thumbnails/2898.png" 
-},
+}
+}, //end of 2000s
+"3000s": {
 "3000": { 
   title: "Title for 3000", 
   performers: { 
@@ -713,8 +718,9 @@ const songs = {
     "Performer1": "#"
   }, 
   thumbnail: "thumbnails/3737.png" 
-},
-  // 4000s–8888+ songs
+}
+},//end of 3000s
+"4000s": {
 "4000": { 
   title: "Title for 4000", 
   performers: { "Performer1": "#" }, 
@@ -849,16 +855,13 @@ const songs = {
   title: "Title for 4888", 
   performers: { "Performer1": "#" }, 
   thumbnail: "thumbnails/4888.png" 
+} //end of 4000s
 },
+"5000s": {  
 "5000": { 
   title: "Title for 5000", 
   performers: { "Performer1": "#" }, 
   thumbnail: "thumbnails/5000.png" 
-},
-"50000": { 
-  title: "Title for 50000", 
-  performers: { "Performer1": "#" }, 
-  thumbnail: "thumbnails/50000.png" 
 },
 "5050": { 
   title: "Title for 5050", 
@@ -899,7 +902,9 @@ const songs = {
   title: "Title for 8888", 
   performers: { "Performer1": "#" }, 
   thumbnail: "thumbnails/8888.png" 
+}//end of 5000s
 },
+  "10000s": {
   "10000": { 
     title: "10000", 
     performers: {}, 
@@ -1134,7 +1139,9 @@ const songs = {
     title: "18888", 
     performers: {}, 
     thumbnail: "thumbnails/18888.png" 
+  }//end of 10000s
   },
+  "20000s": {
   "20000": { 
     title: "20000", 
     performers: {}, 
@@ -1170,7 +1177,7 @@ const songs = {
     performers: {}, 
     thumbnail: "thumbnails/300000.png" 
   }
-  
+} 
 };
 
 // Reference containers
