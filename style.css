@@ -41,12 +41,12 @@ body {
 /* CATEGORY BUTTONS OVER HEADER */
 #category-buttons {
   position: absolute;
-  bottom: 5px;        /* distance from bottom of header */
+  bottom: 15px;        /* distance from bottom of header */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .category-btn {
