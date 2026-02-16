@@ -8,24 +8,26 @@
 <body>
   <h1>Dance Choreos</h1>
   <div class="grid">
-    <div class="card" onclick="playVideo('dQw4w9WgXcQ')">
-      <img src="thumbnails/song1.jpg" alt="Song 1">
-      <h3>Song Title 1</h3>
+    <!-- Example cards -->
+    <div class="card" onclick="openSong('Song 1')">
+      <img src="thumbnails/song1.png" alt="Song 1">
+      <h3>Song 1</h3>
     </div>
-    <div class="card" onclick="playVideo('3JZ_D3ELwOQ')">
-      <img src="thumbnails/song2.jpg" alt="Song 2">
-      <h3>Song Title 2</h3>
+    <div class="card" onclick="openSong('Song 2')">
+      <img src="thumbnails/song2.png" alt="Song 2">
+      <h3>Song 2</h3>
     </div>
-    <div class="card" onclick="playVideo('kXYiU_JCYtU')">
-      <img src="thumbnails/song3.jpg" alt="Song 3">
-      <h3>Song Title 3</h3>
+    <div class="card" onclick="openSong('Song 3')">
+      <img src="thumbnails/song3.png" alt="Song 3">
+      <h3>Song 3</h3>
     </div>
-    <!-- Add more cards by copying the div.card block -->
+    <!-- Add more cards here following the same format -->
   </div>
 
+  <!-- Modal -->
   <div id="modal" onclick="closeModal()">
     <div class="modal-content">
-      <iframe id="videoPlayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <p id="placeholderText">Video coming soon!</p>
     </div>
   </div>
 
