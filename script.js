@@ -1,6 +1,6 @@
 const songs = {
   "1000": { 
-    title: "1000", 
+    title: "SEE봐 레쓰고", 
     performers: { 
       "두니": "https://vod.sooplive.co.kr/player/187080117/catch",
       "금별": "https://vod.sooplive.co.kr/player/187082555/catch"
