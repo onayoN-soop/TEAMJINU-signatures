@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Dance Choreos</title>
+  <title>Dance Choreos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello! This is my dance choreo site.</h1>
+  <h1>Dance Choreos</h1>
+  <div class="grid">
+    <div class="card" onclick="playVideo('dQw4w9WgXcQ')">
+      <img src="thumbnails/song1.jpg" alt="Song 1">
+      <h3>Song Title 1</h3>
+    </div>
+    <div class="card" onclick="playVideo('3JZ_D3ELwOQ')">
+      <img src="thumbnails/song2.jpg" alt="Song 2">
+      <h3>Song Title 2</h3>
+    </div>
+    <div class="card" onclick="playVideo('kXYiU_JCYtU')">
+      <img src="thumbnails/song3.jpg" alt="Song 3">
+      <h3>Song Title 3</h3>
+    </div>
+    <!-- Add more cards by copying the div.card block -->
+  </div>
+
+  <div id="modal" onclick="closeModal()">
+    <div class="modal-content">
+      <iframe id="videoPlayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
