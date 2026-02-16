@@ -23,11 +23,6 @@ h1 {
   background-color: #fff;
   border: 1px solid #ccc;
   overflow: hidden;
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .card img {
@@ -36,33 +31,35 @@ h1 {
   display: block;
 }
 
-/* Modal styling */
+/* Modal styles */
 .modal {
-  display: none; /* hidden by default */
+  display: none;
   position: fixed;
-  top: 0;
+  z-index: 1000;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5); /* semi-transparent overlay */
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
 
 .modal-content {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.9); /* 90% opaque white */
   padding: 20px;
   border-radius: 10px;
-  max-width: 400px;
   text-align: center;
   position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 90%;
+  animation: fadeIn 0.2s ease-out;
 }
 
 .modal-content img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
   margin-bottom: 10px;
 }
 
@@ -70,22 +67,41 @@ h1 {
   margin: 10px 0;
 }
 
-.modal-content a {
-  display: block;
-  margin: 5px 0;
-  text-decoration: none;
-  color: #333;
-}
-
-.modal-content a:hover {
-  text-decoration: underline;
-}
-
-.modal-close {
+#modal-close {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+}
+
+#modal-close:hover {
+  color: #ff3333;
+}
+
+/* Performer buttons */
+#modal-performers a {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  padding: 8px 15px;
+  background-color: #ffdd57;
+  color: #333;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: bold;
+}
+
+#modal-performers a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  background-color: #ffd93b;
+}
+
+/* Modal fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95);}
+  to { opacity: 1; transform: scale(1);}
 }
