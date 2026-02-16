@@ -23,7 +23,7 @@ h1 {
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s;
-  width: 245px; /* fixed card width */
+  width: 245px;
 }
 
 .card:hover {
@@ -31,9 +31,9 @@ h1 {
 }
 
 .card img {
-  width: 245px;    /* match thumbnail width */
-  height: 130px;   /* match thumbnail height */
-  object-fit: cover; /* fills the area without distortion */
+  width: 245px;
+  height: 130px;
+  object-fit: cover;
   display: block;
 }
 
@@ -42,7 +42,9 @@ h1 {
   font-size: 1rem;
 }
 
+/* Hidden by default */
 .card .performers {
+  display: none;
   padding-bottom: 10px;
 }
 
