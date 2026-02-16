@@ -1,5 +1,3 @@
-window.onload = function() {
-
 const songs = {
   "1000": { 
     title: "1000", 
@@ -504,5 +502,3 @@ modal.addEventListener('click', (e) => {
   if (e.target === modal) modal.style.display = 'none';
 });
 
-
-};
