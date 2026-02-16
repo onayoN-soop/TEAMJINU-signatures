@@ -134,35 +134,47 @@ h1 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-/* HEADER IMAGE */
-#header-image {
+/* Header container */
+#header-container {
+  position: relative;
   width: 100%;
-  max-height: 300px; /* adjust as needed */
-  object-fit: cover; /* ensures it fills the width nicely */
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* CATEGORY BUTTONS */
-#category-buttons {
-  text-align: center;
+  overflow: hidden;
   margin-bottom: 30px;
 }
 
-#category-buttons button {
-  margin: 5px;
-  padding: 10px 20px;
-  background-color: #ffdd57; /* pastel yellow to match performer buttons */
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  cursor: pointer;
-  font-weight: bold;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
+/* Header image */
+#header-container #header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
-#category-buttons button:hover {
+/* Category buttons overlay */
+#header-container #category-buttons {
+  position: absolute;
+  bottom: 20px; /* distance from bottom of image */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Buttons styling */
+#header-container #category-buttons button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffdd57;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+  font-weight: bold;
+}
+
+#header-container #category-buttons button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
   background-color: #ffd93b;
 }
