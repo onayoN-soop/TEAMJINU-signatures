@@ -1,6 +1,12 @@
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f5f5f5;
+  background-image: url('images/TEAMJINU SIG BG.jpg');
+  background-size: cover;        /* fills the entire viewport */
+  background-position: center;   /* keeps main focus centered */
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* stays in place on scroll */
+  background-color: #f5f5f5;    /* fallback color */
+  margin: 0;
   padding: 20px;
 }
 
@@ -126,4 +132,37 @@ h1 {
 .card:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* HEADER IMAGE */
+#header-image {
+  width: 100%;
+  max-height: 300px; /* adjust as needed */
+  object-fit: cover; /* ensures it fills the width nicely */
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* CATEGORY BUTTONS */
+#category-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#category-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #ffdd57; /* pastel yellow to match performer buttons */
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
+}
+
+#category-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  background-color: #ffd93b;
 }
