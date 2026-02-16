@@ -17,14 +17,14 @@ const songs = {
   "1002": { 
     title: "1002", 
     performers: { 
-      "두시앙": "https://vod-origin.sooplive.co.kr/player/187114767/catch" 
+      "두시앙": "https://vod.sooplive.co.kr/player/187114767/catch" 
     }, 
     thumbnail: "thumbnails/1002.png" 
   },
   "1003": { 
     title: "1003", 
     performers: { 
-      "먼지": "https://vod-origin.sooplive.co.kr/player/187114919/catch" 
+      "먼지": "https://vod.sooplive.co.kr/player/187114919/catch" 
     }, 
     thumbnail: "thumbnails/1003.png" 
   },
@@ -86,7 +86,7 @@ const songs = {
   "1117": { 
     title: "1117", 
     performers: { 
-      "앙츄": "https://vod-origin.sooplive.co.kr/player/187114471/catch" }, 
+      "앙츄": "https://vod.sooplive.co.kr/player/187114471/catch" }, 
     thumbnail: "thumbnails/1117.png" 
   },
   "1122": { 
