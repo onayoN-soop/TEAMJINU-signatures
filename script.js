@@ -30,7 +30,8 @@ const songs = {
   },
   "1004": { 
     title: "1004", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "박아진": "https://vod.sooplive.co.kr/player/187115257/catch" }, 
     thumbnail: "thumbnails/1004.png" 
   },
   "1005": { 
