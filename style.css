@@ -24,7 +24,7 @@ body {
 #header-image {
   width: 100%;
   height: 200px;
-  object-fit: cover;   /* fills the header */
+  object-fit: contain;   /* fills the header */
   display: block;
 }
 
