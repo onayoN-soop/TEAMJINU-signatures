@@ -1,7 +1,10 @@
 const songs = {
   "1000": { 
     title: "1000", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "두니": "https://vod.sooplive.co.kr/player/187080117/catch",
+      "금별": "https://vod.sooplive.co.kr/player/187082555/catch"
+    }, 
     thumbnail: "thumbnails/1000.png" 
   },
   "1001": { 
