@@ -551,67 +551,93 @@ const songs = {
   },
   "1744": { 
     title: "1744", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "소소": "https://vod.sooplive.co.kr/player/187293829/catch" 
+    }, 
     thumbnail: "thumbnails/1744.png" 
   },
   "1758": { 
     title: "1758", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "뚜부": "https://vod.sooplive.co.kr/player/182064189/catch"
+    }, 
     thumbnail: "thumbnails/1758.png" 
   },
   "1775": { 
     title: "1775", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "진매": "https://vod.sooplive.co.kr/player/180594907/catch" 
+    }, 
     thumbnail: "thumbnails/1775.png" 
   },
   "1777": { 
     title: "1777", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "만송": "https://vod.sooplive.co.kr/player/187293927/catch" 
+    }, 
     thumbnail: "thumbnails/1777.png" 
   },
   "1800": { 
     title: "1800", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "한빛": "https://vod.sooplive.co.kr/player/187292969/catch" 
+    }, 
     thumbnail: "thumbnails/1800.png" 
   },
   "1829": { 
     title: "1829", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "뚜부": "https://vod.sooplive.co.kr/player/186863537/catch" 
+    }, 
     thumbnail: "thumbnails/1829.png" 
   },
   "1855": { 
     title: "1855", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "뚜부": "https://vod.sooplive.co.kr/player/186894173/catch" 
+    }, 
     thumbnail: "thumbnails/1855.png" 
   },
   "1857": { 
     title: "1857", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "앙츄": "https://vod.sooplive.co.kr/player/187292281/catch" 
+    }, 
     thumbnail: "thumbnails/1857.png" 
   },
   "1888": { 
     title: "1888", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "뚜부": "https://vod.sooplive.co.kr/player/180649359/catch" 
+    }, 
     thumbnail: "thumbnails/1888.png" 
   },
   "1900": { 
     title: "1900", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "제나": "https://vod.sooplive.co.kr/player/187293237/catch" 
+    }, 
     thumbnail: "thumbnails/1900.png" 
   },
   "1919": { 
     title: "1919", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "진매": "https://vod.sooplive.co.kr/player/186893417/catch" 
+    }, 
     thumbnail: "thumbnails/1919.png" 
   },
   "1992": { 
     title: "1992", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "뚜부": "https://vod.sooplive.co.kr/player/186864013/catch" 
+    }, 
     thumbnail: "thumbnails/1992.png" 
   },
   "1999": { 
     title: "1999", 
-    performers: { "Performer1": "#" }, 
+    performers: { 
+      "뚜부": "https://vod.sooplive.co.kr/player/186864057/catch" 
+    }, 
     thumbnail: "thumbnails/1999.png" 
   }
 }, //end of 1000s
@@ -869,7 +895,7 @@ const songs = {
 "3444": { 
   title: "3444", 
   performers: { 
-    "Performer1": "#"
+    "한빛": "https://vod.sooplive.co.kr/player/187294391/catch"
   }, 
   thumbnail: "thumbnails/3444.png" 
 },
