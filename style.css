@@ -66,6 +66,18 @@ body {
   transform: translateY(-3px) scale(1.10);
 }
 
+@media (max-width: 600px) {
+  #category-buttons {
+    flex-wrap: wrap;          /* allow wrapping */
+    justify-content: center;  /* center buttons */
+    gap: 10px;                /* smaller gap for mobile */
+  }
+
+  .category-btn {
+    width: 120px;             /* slightly smaller for mobile */
+    height: 30px;
+  }
+}
 /* CARDS CONTAINER BELOW HEADER */
 #cards-container {
   margin-top: 220px;  /* leave space below fixed header */
