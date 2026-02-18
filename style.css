@@ -68,13 +68,17 @@ body {
 
 @media (max-width: 600px) {
   #category-buttons {
-    flex-wrap: wrap;          /* allow wrapping */
-    justify-content: center;  /* center buttons */
-    gap: 10px;                /* smaller gap for mobile */
+    position: static;       /* let it flow normally */
+    transform: none;        /* remove the translateX */
+    display: flex;
+    flex-wrap: wrap;        /* allow wrapping */
+    justify-content: center;/* center buttons */
+    gap: 10px;
+    margin-top: 160px;      /* push below header image */
   }
 
   .category-btn {
-    width: 120px;             /* slightly smaller for mobile */
+    width: 120px;           /* adjust size for mobile */
     height: 30px;
   }
 }
