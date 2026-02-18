@@ -965,12 +965,16 @@ const songs = {
   },
   "10074": { 
     title: "10074", 
-    performers: {}, 
+    performers: {
+      "금별": "https://vod.sooplive.co.kr/player/183464411/catch"
+    }, 
     thumbnail: "thumbnails/10074.png" 
   },
   "10075": { 
     title: "10075", 
-    performers: {}, 
+    performers: {
+      "제나": "https://vod.sooplive.co.kr/player/173198069/catch"
+    }, 
     thumbnail: "thumbnails/10075.png" 
   },
   "10077": { 
@@ -980,22 +984,30 @@ const songs = {
   },
   "10079": { 
     title: "10079", 
-    performers: {}, 
+    performers: {
+      "금별": "https://vod.sooplive.co.kr/player/186970155/catch"
+    }, 
     thumbnail: "thumbnails/10079.png" 
   },
   "10082": { 
     title: "10082", 
-    performers: {}, 
+    performers: {
+      "금별": "https://vod.sooplive.co.kr/player/187222643/catch"
+    }, 
     thumbnail: "thumbnails/10082.png" 
   },
   "10084": { 
     title: "10084", 
-    performers: {}, 
+    performers: {
+      "두시앙": "https://vod.sooplive.co.kr/player/187222795/catch"
+    }, 
     thumbnail: "thumbnails/10084.png" 
   },
   "10085": { 
     title: "10085", 
-    performers: {}, 
+    performers: {
+      "박아진": "https://vod.sooplive.co.kr/player/187222901/catch"
+    }, 
     thumbnail: "thumbnails/10085.png" 
   },
   "10098": { 
@@ -1060,12 +1072,16 @@ const songs = {
   },
   "10811": { 
     title: "10811", 
-    performers: {}, 
+    performers: {
+      "백만송": "https://vod.sooplive.co.kr/player/174628379/catch"
+    }, 
     thumbnail: "thumbnails/10811.png" 
   },
   "10825": { 
     title: "10825", 
-    performers: {}, 
+    performers: {
+      "소소": "https://vod.sooplive.co.kr/player/174535575/catch"
+    }, 
     thumbnail: "thumbnails/10825.png" 
   },
   "10944": { 
