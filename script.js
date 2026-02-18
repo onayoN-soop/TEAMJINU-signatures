@@ -782,7 +782,7 @@ const songs = {
   performers: { 
     "가람": "https://vod.sooplive.co.kr/player/187284879/catch"
   }, 
-  thumbnail: "thumbnails/2525.png" 
+  thumbnail: "thumbnails/2575.png" 
 },
 "2588": { 
   title: "2588", 
