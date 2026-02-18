@@ -930,7 +930,7 @@ const songs = {
 "3669": { 
   title: "3669", 
   performers: { 
-    "Performer1": "#"
+    "NOT YET AVAILABLE": ""
   }, 
   thumbnail: "thumbnails/3669.png" 
 },
@@ -1246,7 +1246,7 @@ const songs = {
   "10032": { 
     title: "10032", 
     performers: {
-      "n/a": ""
+      "NOT YET AVAILABLE": ""
     }, 
     thumbnail: "thumbnails/10032.png" 
   },  
