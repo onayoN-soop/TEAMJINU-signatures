@@ -41,57 +41,60 @@ body {
 /* CATEGORY BUTTONS OVER HEADER */
 #category-buttons {
   position: absolute;
-  bottom: 15px;       
+  bottom: 15px; 
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
-  max-width: 95%;      /* prevents horizontal overflow */
-  max-height: 70px;    /* 2 rows max (30px height + gap) */
-  overflow: hidden;
+  
+  /* Add for horizontal scrolling on small screens */
+  overflow-x: auto;
+  max-width: 95%;      /* ensures it doesn't overflow viewport */
+  padding-bottom: 5px; /* optional spacing at bottom */
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+}
+
+/* Hide scrollbar in Webkit browsers */
+#category-buttons::-webkit-scrollbar {
+  display: none;
 }
 
 .category-btn {
-  flex: 1 1 100px;       /* allow shrinking, base width 100px */
-  max-width: 150px;      /* cap the width */
+  flex: 0 0 auto; /* prevent buttons from shrinking */
+  width: 120px;   /* slightly smaller for mobile */
   height: 30px;
   cursor: pointer;
-  border-radius: 0;
-  box-shadow: none;
   object-fit: contain;
-  transition: transform 0.15s;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
-
 
 .category-btn:hover {
-  transform: translateY(-3px) scale(1.10);
+  transform: translateY(-3px) scale(1.1);
 }
+
 
 .category-btn.active-category {
   transform: translateY(-3px) scale(1.10);
 }
 
 
+/* Make category buttons responsive on mobile */
 @media (max-width: 600px) {
   #category-buttons {
-    position: absolute;       /* stay overlayed */
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-wrap: wrap;          /* allow wrapping */
-    justify-content: center;  /* center rows */
-    gap: 8px;                 /* smaller spacing for mobile */
-    max-width: 100%;          /* allow full width */
+    gap: 5px; /* reduce space between buttons */
   }
 
   .category-btn {
-    flex: 1 1 calc(50% - 8px); /* allow 2 per row */
-    max-width: 140px;           /* cap width */
-    min-width: 100px;           /* don't shrink too much */
-    height: 30px;
+    width: 80px;   /* shrink width */
+    height: 25px;  /* shrink height */
+  }
+}
+
+@media (max-width: 400px) {
+  .category-btn {
+    width: 60px;
+    height: 20px;
+    font-size: 0.8rem; /* optional: reduce text size if using text-based buttons */
   }
 }
 
