@@ -140,6 +140,13 @@ const songs = {
     }, 
     thumbnail: "thumbnails/1140.png" 
   },
+  "1144": { 
+    title: "1144", 
+    performers: { 
+      "뚜부": "https://vod.sooplive.co.kr/player/186864217/catch" 
+    }, 
+    thumbnail: "thumbnails/1144.png" 
+  },
   "1150": { 
     title: "1150", 
     performers: { 
@@ -423,6 +430,20 @@ const songs = {
     }, 
     thumbnail: "thumbnails/1450.png" 
   },
+  "1454": { 
+    title: "1454", 
+    performers: { 
+      "뚜부": "https://vod.sooplive.co.kr/player/186864421/catch" 
+    }, 
+    thumbnail: "thumbnails/1454.png" 
+  },
+  "1457": { 
+    title: "1457", 
+    performers: { 
+      "뚜부": "https://vod.sooplive.co.kr/player/186864565/catch" 
+    }, 
+    thumbnail: "thumbnails/1457.png" 
+  },
   "1459": { 
     title: "1459", 
     performers: { 
@@ -443,6 +464,13 @@ const songs = {
       "두시앙": "https://vod.sooplive.co.kr/player/187289739/catch" 
     }, 
     thumbnail: "thumbnails/1475.png" 
+  },
+  "1477": { 
+    title: "1477", 
+    performers: { 
+      "진매": "https://vod.sooplive.co.kr/player/186892769/catch" 
+    }, 
+    thumbnail: "thumbnails/1477.png" 
   },
   "1488": { 
     title: "1488", 
@@ -1215,12 +1243,26 @@ const songs = {
     }, 
     thumbnail: "thumbnails/10031.png" 
   },
+  "10032": { 
+    title: "10032", 
+    performers: {
+      "": ""
+    }, 
+    thumbnail: "thumbnails/10032.png" 
+  },  
   "10040": { 
     title: "10040", 
     performers: {
       "두시앙": "https://vod.sooplive.co.kr/player/182067539/catch"
     }, 
     thumbnail: "thumbnails/10040.png" 
+  },
+  "10045": { 
+    title: "10045", 
+    performers: {
+      "미소냥": "https://vod.sooplive.co.kr/player/187295795/catch"
+    }, 
+    thumbnail: "thumbnails/10045.png" 
   },
   "10054": { 
     title: "10054", 
@@ -1326,6 +1368,13 @@ const songs = {
       "두시앙": "https://vod.sooplive.co.kr/player/183400943/catch"
     }, 
     thumbnail: "thumbnails/10222.png" 
+  },
+  "10282": { 
+    title: "10282", 
+    performers: {
+      "금별": "https://vod.sooplive.co.kr/player/186970381/catch"
+    }, 
+    thumbnail: "thumbnails/10282.png" 
   },
   "10301": { 
     title: "10301", 
