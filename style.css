@@ -45,23 +45,25 @@ body {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-wrap: wrap;            /* allow wrapping */
-  justify-content: center;    /* center buttons horizontally */
-  gap: 10px;                  /* space between buttons */
-  max-width: 95%;             /* prevent horizontal overflow */
-  max-height: 70px;           /* allow only 2 rows: 30px height + gap */
-  overflow: hidden;           /* hide any buttons beyond 2 rows */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 95%;      /* prevents horizontal overflow */
+  max-height: 70px;    /* 2 rows max (30px height + gap) */
+  overflow: hidden;
 }
 
 .category-btn {
-  width: 150px;              
-  height: 30px;              
+  flex: 1 1 100px;       /* allow shrinking, base width 100px */
+  max-width: 150px;      /* cap the width */
+  height: 30px;
   cursor: pointer;
   border-radius: 0;
   box-shadow: none;
   object-fit: contain;
   transition: transform 0.15s;
 }
+
 
 .category-btn:hover {
   transform: translateY(-3px) scale(1.10);
@@ -74,22 +76,25 @@ body {
 
 @media (max-width: 600px) {
   #category-buttons {
-    position: absolute;       /* keep overlaying header */
-    bottom: 10px;             /* distance from bottom of header */
+    position: absolute;       /* stay overlayed */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-wrap: wrap;          /* allow wrapping */
     justify-content: center;  /* center rows */
-    gap: 10px;                /* spacing between buttons */
-    max-width: 90%;           /* ensure row fits within screen */
+    gap: 8px;                 /* smaller spacing for mobile */
+    max-width: 100%;          /* allow full width */
   }
 
   .category-btn {
-    width: 120px;             /* smaller button size for mobile */
+    flex: 1 1 calc(50% - 8px); /* allow 2 per row */
+    max-width: 140px;           /* cap width */
+    min-width: 100px;           /* don't shrink too much */
     height: 30px;
   }
 }
+
 
 /* CARDS CONTAINER BELOW HEADER */
 #cards-container {
