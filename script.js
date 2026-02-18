@@ -5,6 +5,8 @@ const songs = {
     performers: { 
       "두니": "https://vod.sooplive.co.kr/player/187080117/catch",
       "금별": "https://vod.sooplive.co.kr/player/187082555/catch",
+      "진매": "https://vod.sooplive.co.kr/player/186886825/catch",
+      "뚜부": "https://vod.sooplive.co.kr/player/186882517/catch",
       "두시앙": "https://vod.sooplive.co.kr/player/187099289/catch"
     }, 
     thumbnail: "thumbnails/1000.png" 
