@@ -41,19 +41,21 @@ body {
 /* CATEGORY BUTTONS OVER HEADER */
 #category-buttons {
   position: absolute;
-  bottom: 15px;        /* distance from bottom of header */
+  bottom: 15px;       
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-wrap: wrap;          /* allow wrapping naturally */
-  justify-content: center;  /* center rows */
-  gap: 15px;                /* space between buttons */
-  max-width: 95%;           /* prevent overflow on narrow screens */
+  flex-wrap: wrap;            /* allow wrapping */
+  justify-content: center;    /* center buttons horizontally */
+  gap: 10px;                  /* space between buttons */
+  max-width: 95%;             /* prevent horizontal overflow */
+  max-height: 70px;           /* allow only 2 rows: 30px height + gap */
+  overflow: hidden;           /* hide any buttons beyond 2 rows */
 }
 
 .category-btn {
-  width: 150px;             /* fixed width */
-  height: 30px;             /* fixed height */
+  width: 150px;              
+  height: 30px;              
   cursor: pointer;
   border-radius: 0;
   box-shadow: none;
@@ -68,6 +70,7 @@ body {
 .category-btn.active-category {
   transform: translateY(-3px) scale(1.10);
 }
+
 
 @media (max-width: 600px) {
   #category-buttons {
