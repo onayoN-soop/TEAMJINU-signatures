@@ -1371,6 +1371,13 @@ const songs = {
     }, 
     thumbnail: "thumbnails/10222.png" 
   },
+   "10270": { 
+    title: "10270", 
+    performers: {
+      "앙츄": "https://vod.sooplive.co.kr/player/188299129/catch"
+    }, 
+    thumbnail: "thumbnails/10270.png" 
+  },
   "10282": { 
     title: "10282", 
     performers: {
@@ -1573,7 +1580,7 @@ const songs = {
   "23000": { 
     title: "23000", 
     performers: {
-      "박봉팔": "https://vod.sooplive.co.kr/player/161785263"
+      "박봉팔": "https://vod.sooplive.co.kr/player/188298397/catch"
     }, 
     thumbnail: "thumbnails/23000.png" 
   },
